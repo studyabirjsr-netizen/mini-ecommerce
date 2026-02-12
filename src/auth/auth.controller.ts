@@ -36,7 +36,7 @@ import { Role } from '../enum/role.enum';
 export class AuthController {
   constructor(private authService: AuthService) {}
 
-  // Customer Registration
+  
   @Post('register')
   async register(@Body(ValidationPipe) registerDto: RegisterDto) {
     return this.authService.register(registerDto);
@@ -44,7 +44,7 @@ export class AuthController {
 
    
 
-  // Admin Registration (Admin Only)
+  
   @Post('admin-register')
  @UseGuards(JwtAuthGuard, RolesGuard)
   @Roles(Role.ADMIN)
@@ -53,7 +53,7 @@ export class AuthController {
   }
 
 
-  // Login (Admin & Customer)
+  
   @Post('login')
   async login(@Body(ValidationPipe) loginDto: LoginDto) {
     return this.authService.login(loginDto);

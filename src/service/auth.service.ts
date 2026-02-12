@@ -93,7 +93,7 @@ export class AuthService {
     private jwtService: JwtService,
   ) {}
 
-  // Customer Registration (Public)
+  
   async register(registerDto: RegisterDto) {
     const existingUser = await this.usersService.findbyEmail(registerDto.email);
     if (existingUser) {
@@ -104,7 +104,7 @@ export class AuthService {
     const user = await this.usersService.create({
       ...registerDto,
       password: hashedPassword,
-      role: Role.CUSTOMER, // ← Force customer role
+      role: Role.CUSTOMER, 
     });
 
     const token = this.generateToken(user);
@@ -120,7 +120,7 @@ export class AuthService {
     };
   }
 
-  // Admin Registration (Admin Only)
+  
   async registerAdmin(registerDto: RegisterDto) {
     const existingUser = await this.usersService.findbyEmail(registerDto.email);
     if (existingUser) {
@@ -131,7 +131,7 @@ export class AuthService {
     const user = await this.usersService.create({
       ...registerDto,
       password: hashedPassword,
-      role: Role.ADMIN, // ← Force admin role
+      role: Role.ADMIN, 
     });
 
     const token = this.generateToken(user);
@@ -147,7 +147,7 @@ export class AuthService {
     };
   }
 
-  // Login (Both Admin & Customer)
+  
   async login(loginDto: LoginDto) {
     const user = await this.usersService.findbyEmail(loginDto.email);
     if (!user) {

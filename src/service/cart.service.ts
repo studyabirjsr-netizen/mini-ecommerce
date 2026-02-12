@@ -24,7 +24,7 @@ export class CartService {
       throw new BadRequestException('Insufficient stock available');
     }
 
-    // Check if product already in cart
+  
     let cartItem = await this.cartRepository.findOne({
       where: {
         userId,

@@ -79,7 +79,7 @@ export class JwtStrategy extends PassportStrategy(Strategy) {
   ) {
     const secret = configService.get<string>('JWT_SECRET');
     
-    // Validation - will throw error during startup if secret is missing
+  
     if (!secret) {
       throw new Error(
         'JWT_SECRET is not defined. Please add JWT_SECRET to your .env file'
@@ -100,19 +100,19 @@ export class JwtStrategy extends PassportStrategy(Strategy) {
     try {
       const { sub: id } = payload;
 
-      // Validate payload
+      
       if (!id) {
         throw new UnauthorizedException('Invalid JWT payload: missing user ID');
       }
 
-      // Find user
+      
       const user = await this.usersService.findbyId(id);
 
       if (!user) {
         throw new UnauthorizedException('User not found');
       }
 
-      // Check suspension status
+      
       if (user.isSuspended) {
         throw new UnauthorizedException(
           'Account suspended due to fraudulent behavior'
