@@ -1,0 +1,141 @@
+https://mini-ecommerce-production-fc92.up.railway.app/api/auth/register
+
+{
+  "email": "john.doe@example.com",
+  "password": "customer123",
+  "firstName": "John",
+  "lastName": "Doe"
+}
+
+
+{
+    "user": {
+        "id": "b3e554c1-870f-4e6e-a3e8-8a0b7ce16ca3",
+        "email": "john.doe@example.com",
+        "firstName": "John",
+        "lastName": "Doe",
+        "role": "customer"
+    },
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImpvaG4uZG9lQGV4YW1wbGUuY29tIiwic3ViIjoiYjNlNTU0YzEtODcwZi00ZTZlLWEzZTgtOGEwYjdjZTE2Y2EzIiwicm9sZSI6ImN1c3RvbWVyIiwiaWF0IjoxNzcxMjU1ODk0LCJleHAiOjE3NzE4NjA2OTQsImF1ZCI6ImVjb21tZXJjZS1jbGllbnQiLCJpc3MiOiJlY29tbWVyY2UtYXBpIn0.T_xvt7o8V9HYVcngOA0HI43G5oevl89i2N3aatzKW4A"
+}
+
+
+https://mini-ecommerce-production-fc92.up.railway.app/api/auth/login
+
+
+
+ {
+  "email": "john.doe@example.com",
+  "password": "customer123"
+}
+
+
+{
+    "user": {
+        "id": "b3e554c1-870f-4e6e-a3e8-8a0b7ce16ca3",
+        "email": "john.doe@example.com",
+        "firstName": "John",
+        "lastName": "Doe",
+        "role": "customer"
+    },
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImpvaG4uZG9lQGV4YW1wbGUuY29tIiwic3ViIjoiYjNlNTU0YzEtODcwZi00ZTZlLWEzZTgtOGEwYjdjZTE2Y2EzIiwicm9sZSI6ImN1c3RvbWVyIiwiaWF0IjoxNzcxMjU2MzI1LCJleHAiOjE3NzE4NjExMjUsImF1ZCI6ImVjb21tZXJjZS1jbGllbnQiLCJpc3MiOiJlY29tbWVyY2UtYXBpIn0.yRhERmrq1jXNuHN4jam_L9922F3VrCM2F5DW19ski-s"
+}
+
+
+https://mini-ecommerce-production-fc92.up.railway.app/api/auth/login
+
+ {
+  "email": "admin21@example.com",
+  "password": "admin456"
+}
+
+{
+    "user": {
+        "id": "d3ab28e8-3b4f-4da2-86c0-5e4a68173e6b",
+        "email": "admin21@example.com",
+        "firstName": "Second",
+        "lastName": "Admin",
+        "role": "admin"
+    },
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluMjFAZXhhbXBsZS5jb20iLCJzdWIiOiJkM2FiMjhlOC0zYjRmLTRkYTItODZjMC01ZTRhNjgxNzNlNmIiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3NzEyNTY3NzEsImV4cCI6MTc3MTg2MTU3MSwiYXVkIjoiZWNvbW1lcmNlLWNsaWVudCIsImlzcyI6ImVjb21tZXJjZS1hcGkifQ.1_OO1Cb8ze5dk5kG8ZnvvuufmZDB5Mkp5LD4oFH0ats"
+}
+
+
+https://mini-ecommerce-production-fc92.up.railway.app/api/products
+
+ {
+  "name": "iPhone 15 Pro",
+  "description": "Latest Apple flagship smartphone with A17 Pro chip",
+  "price": 999.99,
+  "stock": 50,
+  "imageUrl": "https://example.com/iphone15.png"
+}
+
+Value :Authorization    key: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluOTFAZXhhbXBsZS5jb20iLCJzdWIiOiIwZWMxNzA3ZC01ZjIyLTQ4NmUtYjRiMS00YTdlZjI3MzZhMzUiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3NzA5MDYzMTIsImV4cCI6MTc3MTUxMTExMiwiYXVkIjoiZWNvbW1lcmNlLWNsaWVudCIsImlzcyI6ImVjb21tZXJjZS1hcGkifQ.xEShy-zfUiIOabSwZxGil7RyjBqWKfrcX-vjHoCFtF0
+
+
+https://mini-ecommerce-production-fc92.up.railway.app/api/products
+
+https://mini-ecommerce-production-fc92.up.railway.app/api/auth/register
+
+{
+  "email": "niloydas@example.com",
+  "password": "customer123",
+  "firstName": "John",
+  "lastName": "Doe"
+}
+
+https://mini-ecommerce-production-fc92.up.railway.app/api/auth/login
+
+{
+  "email": "niloydas@example.com",
+  "password": "customer123"
+   
+}
+
+for customer : post https://mini-ecommerce-production-fc92.up.railway.app/api/cart
+
+Product_id:e1a8683d-532e-48bc-8d01-9edfb32a4b9b
+
+ {
+  "productId": "e1a8683d-532e-48bc-8d01-9edfb32a4b9b",
+  "quantity": 2
+}
+
+with token : eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im5pbG95ZGFzQGV4YW1wbGUuY29tIiwic3ViIjoiYTMwZGU1M2YtOGEwNy00MDkyLWJmNWItOGI4NmMxNzQxZWNjIiwicm9sZSI6ImN1c3RvbWVyIiwiaWF0IjoxNzcxMjYyMzIwLCJleHAiOjE3NzE4NjcxMjAsImF1ZCI6ImVjb21tZXJjZS1jbGllbnQiLCJpc3MiOiJlY29tbWVyY2UtYXBpIn0.vgYIWE0Hkipx5ZICuu8s082r-tNy8UW5Qt9HEaWxzCk
+
+Get all cart :https://mini-ecommerce-production-fc92.up.railway.app/api/cart
+
+https://mini-ecommerce-production-fc92.up.railway.app/api/orders
+
+for admin 
+https://mini-ecommerce-production-fc92.up.railway.app/api/orders/admin/all
+
+order_id:a5adab9f-0407-415b-902b-61e349f2430b
+
+{
+  "shippingAddress": "House 15, Road 27, Banani, Dhaka 1213, Bangladesh"
+}
+
+admin patch:https://mini-ecommerce-production-fc92.up.railway.app/api/orders/a5adab9f-0407-415b-902b-61e349f2430b/status
+
+{
+  "status": "shipped"
+}
+
+admin register:https://mini-ecommerce-production-fc92.up.railway.app/api/auth/admin-register
+admin register token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3QxMjNAZXhhbXBsZS5jb20iLCJzdWIiOiI5MDM2NDNhZC1mYzMzLTRlODUtOTQyNS1jNDdlNzg2OWQ4NTgiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3NzEyNjQ4OTgsImV4cCI6MTc3MTg2OTY5OCwiYXVkIjoiZWNvbW1lcmNlLWNsaWVudCIsImlzcyI6ImVjb21tZXJjZS1hcGkifQ.wsYgteU4tIkcvY0hQZO4-sfOFppNZrHkuya9SUbx5Ds
+
+{
+    "email": "test123@example.com",
+    "password": "test123",
+    "firstName": "Test",
+    "lastName": "User"
+  }
+
+
+
+DELETE https://mini-ecommerce-production-fc92.up.railway.app/api/products/770e8400-e29b-41d4-a716-446655440002
+Authorization: Bearer YOUR_ADMIN_TOKEN_HERE
+
+
